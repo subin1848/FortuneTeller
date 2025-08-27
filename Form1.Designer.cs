@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn = new System.Windows.Forms.Button();
+            this.btnShowResult = new System.Windows.Forms.Button();
             this.tbBirthtime = new System.Windows.Forms.TextBox();
             this.tbBirthday = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.상단내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +49,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn);
+            this.groupBox1.Controls.Add(this.btnShowResult);
             this.groupBox1.Controls.Add(this.tbBirthtime);
             this.groupBox1.Controls.Add(this.tbBirthday);
             this.groupBox1.Controls.Add(this.label2);
@@ -61,14 +61,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "사용자 입력";
             // 
-            // btn
+            // btnShowResult
             // 
-            this.btn.Location = new System.Drawing.Point(33, 208);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(290, 53);
-            this.btn.TabIndex = 4;
-            this.btn.Text = "사주 결과 보기";
-            this.btn.UseVisualStyleBackColor = true;
+            this.btnShowResult.Location = new System.Drawing.Point(33, 208);
+            this.btnShowResult.Name = "btnShowResult";
+            this.btnShowResult.Size = new System.Drawing.Size(290, 53);
+            this.btnShowResult.TabIndex = 4;
+            this.btnShowResult.Text = "사주 결과 보기";
+            this.btnShowResult.UseVisualStyleBackColor = true;
+            this.btnShowResult.Click += new System.EventHandler(this.btn_Click);
             // 
             // tbBirthtime
             // 
@@ -105,7 +106,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Location = new System.Drawing.Point(377, 38);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(411, 400);
@@ -113,14 +114,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "사주 결과";
             // 
-            // textBox1
+            // tbResult
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(381, 358);
-            this.textBox1.TabIndex = 0;
+            this.tbResult.Location = new System.Drawing.Point(15, 26);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.ReadOnly = true;
+            this.tbResult.Size = new System.Drawing.Size(381, 358);
+            this.tbResult.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -200,10 +201,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.TextBox tbBirthtime;
         private System.Windows.Forms.TextBox tbBirthday;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
