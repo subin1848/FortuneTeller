@@ -65,6 +65,13 @@ namespace FortuneTeller
                 form.Show();
             }
         }
+        
+        private string GetFortune()
+        {
+            Random random = new Random();
+            int index = random.Next(0, results.Count);
+            return results[index];
+        }
 
         private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
